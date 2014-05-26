@@ -15,4 +15,10 @@ hs_err_pid*
 .gradle/
 *.iml
 build/
+bin/
+
+.classpath
+.project
+.settings
+
 
