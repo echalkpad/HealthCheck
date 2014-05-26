@@ -6,9 +6,9 @@ public class Config {
     public static final String redirectUrl = "http://localhost:8080/";
     public static final String sc = "35652136ea4c4e679a3650ebe121ca68";
     public static final String svBp = "0cb184f5ac4443958cab083d1eb69dbc";
-    
-    public static final String authorizationUrl = "http://sandboxapi.ihealthlabs.com/OpenApiV2/OAuthv2/userauthorization/";
-    
+
+    public static final String apiUrl = "http://sandboxapi.ihealthlabs.com/openapiv2/";
+    public static final String authorizationUrl = "http://sandboxapi.ihealthlabs.com/openapiv2/oauthv2/userauthorization/";
 }
 
 /*

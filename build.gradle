@@ -14,8 +14,8 @@ buildscript {
   apply plugin: 'eclipse'
   apply plugin: 'spring-boot'
   
-  sourceCompatibility = '1.8'
-  targetCompatibility = '1.8'
+  sourceCompatibility = '1.7'
+  targetCompatibility = '1.7'
 
   repositories {
 	mavenCentral()
@@ -29,6 +29,7 @@ buildscript {
 	//)
 	  
 	  compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+      compile("com.fasterxml.jackson.core:jackson-databind")
 
 	  testCompile("junit:junit")
   }

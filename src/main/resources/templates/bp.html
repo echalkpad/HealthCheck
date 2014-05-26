@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Test Drive for ihealthlabs.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+</head>
+<body>
+    <h1>Blood pressure data</h1>
+    <p>Total record count: <span th:text="${data.recordCount}">cnt</span></p>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>BPL</th>
+            <th>Systolic / Diastolic</th>
+            <th>Heart Rate</th>
+            <th>Arrhythmia</th>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Changed</th>
+            <th>Note</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="entry : ${data.bpEntries}">
+            <td th:text="${entry.bpl}"></td>
+            <td><span th:text="${entry.systolic}"></span> / <span th:text="${entry.diastolic}"></span></td>
+            <td th:text="${entry.hr}"></td>
+            <td th:text="${entry.isArr}"></td>
+            <td th:text="${entry.dataId}"></td>
+            <td th:text="${entry.mDate}"></td>
+            <td th:text="${entry.lastChangeTime}"></td>
+            <td th:text="${entry.note}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>

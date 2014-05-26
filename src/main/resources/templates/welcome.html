@@ -1,10 +1,21 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
+    <title>Test Drive for ihealthlabs.com</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
 </head>
 <body>
-    <p th:text="'Hello, ' + ${message} + '!'" />
+
+
+<div class="jumbotron">
+    <h1>Test Drive for sandbox.ihealthlabs.com</h1>
+    <p>For sandboxed version use the following credentials:</p>
+    <p>Username: sandboxuser@ihealthlabs.com</p>
+    <p>Password: 111111</p>
+    <p><a class="btn btn-primary btn-lg" role="button" href="/auth">Login</a></p>
+</div>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>
